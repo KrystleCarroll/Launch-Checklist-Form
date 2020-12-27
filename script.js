@@ -35,7 +35,7 @@ window.addEventListener("load", function () {
     let cargoLevel = document.getElementById("cargoMassNumber");
    
 
-    submitButton.addEventListener("click", function () {
+    submitButton.addEventListener("click", function (event) {
         
 
         event.preventDefault();
@@ -50,7 +50,7 @@ window.addEventListener("load", function () {
             // stop the form submission
             return;
         }
-        if (isNaN(pilotName.value) === false || isNaN(copilotName) === false) {
+        if (isNaN(pilotName.value) === false || isNaN(copilotName.value) === false) {
             alert("Has to be a name!");
             event.preventDefault();
             return;
